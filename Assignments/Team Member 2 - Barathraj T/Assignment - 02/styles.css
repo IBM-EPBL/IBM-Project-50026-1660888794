@@ -1,0 +1,87 @@
+body {
+    font-family: 'Anaheim';
+    font-size: 1.2em;
+  }
+  
+  body {
+    background-color: rgb(250, 250, 192);
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  h1 {
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(2, 2, 183);
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  #registeration-form {
+    background-color: white;
+  }
+  
+  fieldset { 
+    border:1px solid lightgray;
+    margin: 10px;
+   }
+  
+  legend {
+    font-weight: 700;
+  }
+  
+  #number {
+    width: 150px;
+  }
+    
+  div + div {
+    margin-top: 1em;
+  }
+  
+  input {
+    border: 1px solid #999;
+    border-radius: 0.2em;
+    height: 20px;
+  }
+  
+  textarea {
+    vertical-align: top;
+    border: 1px solid #999;
+    height: 5em;
+    width: 500px;
+    resize: vertical;
+  }
+  
+  #dropdown1,#dob {
+    padding: 5px;
+  }
+
+  .button {
+    padding-left: 90px;
+  }
+  
+  button {
+    margin: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: rgb(27, 135, 194);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  #submitbutton {
+    display: flex; 
+    justify-content: center;
+  }
+  
+  
