@@ -10,5 +10,5 @@ Team ID : PNT2022TMID35229
   - Team member : PRANAV CHANDAR K R
   - Team member : PRASHANTH S
 
-# Skills required:
+## Skills required:
     HTML, CSS, Javascript, IBM Cloud Object Storage, Python-Flask, Kubernetes, Docker, IBM DB2, IBM Container Registry
