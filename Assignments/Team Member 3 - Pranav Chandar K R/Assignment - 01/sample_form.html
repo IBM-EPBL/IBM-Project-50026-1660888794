@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IBM-Assignment-01</title>
+    </head>
+    <body bgcolor="skyblue">
+        <form action="success_page.html" method="post" >
+            <h1 style="text-align: center;">Application form</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="text" required name="user_name" placeholder="Enter your full name">
+                </div>
+                <br/>
+                
+                <div>
+                    <label for="Gender">Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="radio" name="gender" value="male" checked> Male &nbsp
+                    <input type="radio" name="gender" value="female"> Female &nbsp
+                    <input type="radio" name="gender" value="other"> Other
+                   
+                </div>
+                <br/>
+
+                <div>
+                    <label for="Email">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="email" required name="user_email" placeholder="Enter email">
+                </div>
+                <br/>
+                
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" name="user_number" placeholder="Enter phone number">
+                </div>
+                <br/>
+                
+                <div>
+                    <label for="city-label">City:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="text" name="city" placeholder="Enter city">
+                </div>
+                <br/>
+                
+                <div>
+                    <label for="state-label">State:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="text" name="state" placeholder="Enter state">
+                </div>
+                <br/>
+                
+                <div>
+                    <label for="country-label">Country:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="text" name="country" placeholder="Enter country">
+                </div>
+                <br/>
+
+                <div>
+                    <label for="Password">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="password" required name="user_password" placeholder="Enter password here">
+                </div>
+                <br/>
+
+                <div>    
+                    <label for="education">Education:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <select>
+                        <option value="University">University</option>
+                        <option value="College">College</option>
+                        <option value="Secondary">High School</option>  
+                        <option value="None">None</option>
+                    </select>
+                </div>
+                <br/>
+            </fieldset>
+            <br/>    
+
+            <div style="text-align: center;">
+                <button type="button" onclick="location.href = 'success_page.html';">Submit</button> 
+            </div>
+        </form>
+    </body>
+</html>
