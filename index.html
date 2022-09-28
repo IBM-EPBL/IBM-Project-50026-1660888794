@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment - 01 - Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <script>
+        function testJS() {
+        var name = document.getElementById('name').value;
+        var address = document.getElementById('address').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var mobile = document.getElementById('number').value;
+        var gender = document.getElementById('gender').value;
+        var dob = document.getElementById('dob').value;
+        var education = document.getElementById('dropdown1').value;
+        var checkedstr = '';
+        var markedCheckbox = document.getElementsByName('hobbies');  
+        for (var checkbox of markedCheckbox) {  
+            if (checkbox.checked){
+                checkedstr.concat(checkbox.value + ' '); 
+                console.log(checkbox.value);
+            }  
+             
+        }        
+
+        var essay = document.getElementById('msg').value;
+
+        url = './success_page.html?name=' + encodeURIComponent(name)
+        +'?address=' + encodeURIComponent(address)+'?email='+ encodeURIComponent(email)
+        +'?password='+ encodeURIComponent(password)+'?mobile=' + encodeURIComponent(mobile)+'?gender=' + encodeURIComponent(gender)
+        +'?dob=' + encodeURIComponent(dob)
+        +'?education='+ encodeURIComponent(education)+'?essay='+ encodeURIComponent(essay)
+        +'?checkedElements='+ encodeURIComponent(checkedstr);
+        document.location.href = url;
+    }
+    </script>
+    <body>
+        <form id="registeration-form" method="post" name="reg_form">
+            <h1 id="title">Sample Application Form</h1>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter your full name here">
+                </div>
+                <br/>
+                <div>
+                    <label for="address-label">Address:</label>
+                    <input type="Address" id="address" name="Address" placeholder="Enter address here">
+                </div>
+                <br/>
+                <div>
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter email here">
+                </div>
+                <br/>
+                <div>
+                    <label id="password-label" for="Password">Password:</label>
+                    <input type="password" required id="password" name="user_password" placeholder="Enter password here">
+                </div>
+                <br/>
+                <div>
+                    <label id="number-label" for="phone">Phone Number:</label>
+                    <input type="number" id="number" name="user_number">
+                </div>
+                <br/>
+            
+                <!-- ------------------Radio Buttons-------------------------------- -->
+                <div>
+                    <label for="Gender" >Gender</label><br>
+                    <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" id="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" id="gender" value="other"> Other
+                   
+                </div>
+                <br/>
+                <div>
+                    <label for="date-label">Date of Birth:</label>
+                    <input type="date" name="bday" id="dob">
+                </div>
+                <br/>
+
+            <!-- -----------------Dropdown menus--------------------------------- -->
+                <div>    
+                    <label for="education">Education Level Completed:</label>
+                    <select id="dropdown1">
+                        <option value="University">University</option>
+                        <option value="College">College</option>
+                        <option value="Secondary">High School</option>  
+                        <option value="None">None</option>
+                    </select>
+                </div>
+            
+            </fieldset>       
+            <!-- --------------------Text Areas------------------------------ -->
+            <fieldset>
+                <legend>Essay Section</legend>
+                <div>
+                    <label for="msg"></label>
+                    <p> In 50 words or more explain why you want to apply for this position</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+                </div>
+            </fieldset>   
+            <br/>    
+            <div id="submitbutton">
+                <button type="button" id="submit" onclick="testJS()">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
