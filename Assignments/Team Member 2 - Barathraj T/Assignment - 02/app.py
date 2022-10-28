@@ -4,7 +4,7 @@ import ibm_db
 
 app = Flask(__name__)
 app.secret_key = 'your secret key'
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=32716;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;PROTOCOL=TCPIP;UID=xlx84463;PWD=pRk7fK3KN7m48AOL;", "", "")
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=30699;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;PROTOCOL=TCPIP;UID=rgr38897;PWD=B0vrmEGAZGRxLKoP;", "", "")
 
 
 @app.route("/")
